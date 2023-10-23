@@ -111,14 +111,11 @@
     left: -200vw;
 }
 
-h1{
+.slider h1{
     font-size: 5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-  }
   
   .products {
     display: flex;
@@ -128,13 +125,6 @@ h1{
     padding-bottom: 2%;
   }
 
-  .products h2{
-    font-size: 3em;
-    color: white;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  
   .all-products {
     position: relative;
     width: 100%;
@@ -146,10 +136,6 @@ h1{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-  }
-  
-  * {
-    box-sizing: border-box;
   }
   
   .wrapper {
