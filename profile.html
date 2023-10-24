@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/common-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles/profile.css">
+    <title>Tiendita Juegos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="./index.html">Logo</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Tienda</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Acerca de Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="links">
+                <li><a href="./profile.html">Mi Perfil</a></li>
+                <li> <a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+            </ul>
+
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown_menu open logout">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./catalogo.html">Tienda</a></li>
+            <li><a href="">Noticias</a></li>
+            <li><a href="">Acerca de Nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="./profile.html">Mi Perfil</a></li>
+            <li><a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="profile-general">
+            <h1>Configuracion del perfil</h1>
+            <div class="profile-content">
+                <aside>
+                    <div class="img"></div>
+                    <h3>Manuel Glez</h3>
+                    <div class="vertical-menu">
+                        <a href="#" class="active">Cuenta</a>
+                        <a href="#">Seguridad</a>
+                        <a href="#">Aplicacion</a>
+                        <a href="#">Notificaciones</a>
+                    </div>
+                </aside>
+                <div class="profile">
+                    <h1>Bienvenido de nuevo Manuel Glez</h1>
+                    <h2>Usuario: Manelpruebas</h2>
+                    <h2>Nombre: Manuel</h2>
+                    <h2>Apellidos: González</h2>
+                    <h2>Correo: prueba123@gmail.com</h2>
+                    <h2>Ubicacion: Santa Cruz de Tenerife</h2>
+                    <h3>Descripcion: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo minima totam
+                        ratione, sit corporis nostrum similique beatae repudiandae quae numquam laboriosam natus, quidem
+                        laudantium consequatur, nemo repellat soluta maiores placeat.</h3>
+                </div>
+                <div class="profile-settings">
+                    <h2>Configuracion de la Cuenta</h2>
+                    <div class="profile-name">
+                        <p>Nombre: </p>
+                        <input type="text" name="p-name" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$" placeholder="Nombre"
+                            required>
+                    </div>
+                    <div class="profile-surr">
+                        <p>Apellidos: </p>
+                        <input type="text" name="p-surr" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$" placeholder="Apellidos"
+                            required>
+                    </div>
+                    <div class="profile-mail">
+                        <p>Correo: </p>
+                        <input type="text" name="p-mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                            placeholder="example@example.com" required />
+                    </div>
+                    <div class="profile-tlf">
+                        <p>Número de teléfono: </p>
+                        <input type="text" name="p-tlf" pattern="^[0-9-+\s()]*$" placeholder="900300200" required>
+                    </div>
+                    <div class="profile-location">
+                        <p>Ubicacion: </p>
+                        <input type="text" name="p-locat" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$" placeholder="La Laguna">
+                    </div>
+                    <div class="profile-passwd">
+                        <p>Contraseña: </p>
+                        <input type="password" name="p-passwd" disabled>
+                    </div>
+                    <div class="desc-name">
+                        <p>Una pequeña descripcion sobre ti:</p>
+                        <textarea rows="4" cols="50" placeholder="Un pequeño ejemplo sobre ti">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit quae, minus, impedit aut harum amet ipsam cum est non consequuntur. Nihil fuga nulla nobis rem, mollitia odio explicabo perferendis!
+                        </textarea>
+                    </div>
+                    <div class="buttons">
+                        <button>Actualizar</button>
+                        <button>Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <div class="container">
+                <div class="col contanct">
+                    <p>
+                        <a href="" class="logo">Brand Name</a>
+                    </p>
+                    <p>
+                        <a href="mailto:prueba@gmail.com" class="icon"><i
+                                class="fa-regular fa-envelope"></i>prueba@gmail.com</a>
+                    </p>
+                    <div class="social_media_links">
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col info">
+                    <h2>Info</h2>
+                    <p>
+                        <a href="">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="">Tienda</a>
+                    </p>
+                    <p>
+                        <a href="">Noticias</a>
+                    </p>
+                    <p>
+                        <a href="">Acerca de Nosotros</a>
+                    </p>
+                    <p>
+                        <a href="">Contacto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">Copyright&copy;2023 Brand Name</div>
+    </footer>
+    <script src="./Scripts/common-content.js"></script>
+    <script src="./Scripts/add_default_content_profile.js"></script>
+</body>
+
+</html>
