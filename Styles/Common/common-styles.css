@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,200&family=Roboto:ital,wght@1,300&display=swap');
+
+:root {
+    --color-primario: azure;
+    --color-secundario: black;
+    --color-secundario-rgba: rgba(0, 0, 0, 0.7);
+    --tamanio-texto: 1.5em;
+    --color-enlaces: #e5b357;
+
+    --color-primario-alt: black;
+    --color-secundario-alt: azure;
+    --color-segcundario-rgba-alt: rgba(0,0,0,0.7); 
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.white-theme{
+    background-color: var(--color-primario-alt);
+    background-image: url(../../Images/white-background.jpg);
+}
+
+.dark-theme{
+    background-color: var(--color-primario);
+    background-image: url(../../Images/background-old.jpg);
+}
+
+#set-light-theme-button{
+    color: white !important;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.white-theme a{
+    color: var(--color-primario-alt);
+}
+
+.dark-theme a{
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-enlaces);
+}

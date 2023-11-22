@@ -1,0 +1,207 @@
+:root {
+    --color-primario: #ffff;
+    --color-secundario: black;
+    --color-secundario-rgba: rgba(0, 0, 0, 0.7);
+    --tamanio-texto: 1.5em;
+    --color-enlaces: #e5b357;
+
+    --color-primario-alt: black;
+    --color-secundario-alt: #ffff;
+    --color-segcundario-rgba-alt: rgba(255, 255, 255, 0.8); 
+  }
+  
+@media (max-width: 991px){
+    .dark-theme footer {
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
+    }
+
+    .white-theme footer{
+        background-color: var(--color-secundario-alt);
+        color: var(--color-secundario);
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: var(--color-primario);
+    }
+    
+    footer h2 {
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+    }
+    
+    footer p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .footer_content .contanct {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .footer_copyright {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dark-theme .footer_copyright{
+        background-color: var(--color-secundario);
+    }
+
+    .white-theme .footer_copyright{
+        background-color: var(--color-primario);
+    }
+    
+    .footer_content {
+        padding: 2rem;
+    }
+    
+    .footer_content .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer_content .logo {
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .footer_content .icon {
+        font-size: 24px;
+        margin-right: 5px;
+    }
+    
+    .footer_content .icon i {
+        margin-right: 1rem;
+    }
+    
+    .footer_content .social_media_links {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .footer_content .social_media_links .icon {
+        font-size: 28px;
+        margin-right: 1rem;
+    }
+    
+    .footer_content .info {
+        margin-left: 3rem;
+    }
+
+    .footer_content .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer_content .info {
+        display: none;
+    }
+
+    .footer_content .contanct p {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px){
+    .dark-theme footer {
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
+    }
+
+    .white-theme footer{
+        background-color: var(--color-secundario-alt);
+        color: var(--color-secundario);
+    }
+    
+    footer a {
+        text-decoration: none;
+        color: var(--color-primario);
+    }
+    
+    footer h2 {
+        color: var(--primary-color);
+        margin-bottom: 2rem;
+    }
+    
+    footer p {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .footer_content .contanct {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .footer_copyright {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dark-theme .footer_copyright{
+        background-color: var(--color-secundario);
+    }
+
+    .white-theme .footer_copyright{
+        background-color: var(--color-primario);
+    }
+
+    .footer_content {
+        padding: 2rem;
+    }
+    
+    .footer_content .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer_content .logo {
+        margin-bottom: 2rem;
+        color: var(--primary-color);
+        font-size: 46px;
+        font-weight: bold;
+        line-height: 1;
+    }
+    
+    .footer_content .icon {
+        font-size: 24px;
+        margin-right: 5px;
+    }
+    
+    .footer_content .icon i {
+        margin-right: 1rem;
+    }
+    
+    .footer_content .social_media_links {
+        margin-top: 5rem;
+    }
+    
+    .footer_content .social_media_links .icon {
+        font-size: 28px;
+        margin-right: 1rem;
+    }
+    
+    .footer_content .info {
+        margin-left: 3rem;
+    }
+}

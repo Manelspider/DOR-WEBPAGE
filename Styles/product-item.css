@@ -1,0 +1,25 @@
+.product-content{
+    height: 125vh;
+    width: 100%;
+    background: white;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: red;
+}
+
+.card-images{
+    width: 55%;
+    height: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

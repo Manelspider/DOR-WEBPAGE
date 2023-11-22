@@ -1,0 +1,221 @@
+:root {
+    --color-primario: azure;
+    --color-secundario: black;
+    --color-secundario-rgba: rgba(0, 0, 0, 0.7);
+    --tamanio-texto: 1.5em;
+    --color-enlaces: #e5b357;
+
+    --color-primario-alt: black;
+    --color-secundario-alt: azure;
+    --color-segcundario-rgba-alt: rgba(255, 255, 255, 0.8); 
+  }
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    font-size: var(--tamanio-texto);
+}
+
+.white-theme header{
+    background: var(--color-segcundario-rgba-alt);
+}
+
+.dark-theme header{
+    background: var(--color-secundario-rgba);
+}
+
+@media (max-width: 991px) {
+
+    .navbar {
+        width: 100%;
+        height: 10vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .logo a {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    
+    .action_btn {
+    
+        background-color: #618264;
+        color: var(--color-primario) !important;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transform: scale 0.2 ease;
+    }
+
+    .navbar .toggle_btn {
+        color: var(--color-primario);
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .dark-theme .navbar .toggle_btn{
+        color: var(--color-primario);
+    }
+
+    .white-theme .navbar .toggle_btn {
+        color: var(--color-primario-alt);
+    }
+
+    
+    .navbar .toggle_btn {
+        display: block;
+    }
+    
+    .action_logout_btn {
+        background-color: red;
+    }
+    
+    .dropdown_menu {
+        position: absolute;
+        display: none;
+        right: 2rem;
+        top: 10vh;
+        height: 0vh;
+        width: 50%;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .white-theme .dropdown_menu{
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+    }
+
+    .dark-theme .dropdown_menu{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+    }
+
+    .dropdown_menu.open.login {
+        height: 37vh;
+    }
+    
+    .dropdown_menu.open.logout {
+        height: 42vh;
+        z-index: 2;
+    }
+    
+    .dropdown_menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dropdown_menu .action_btn {
+        width: 100%;
+        padding: 1.2em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .navbar {
+        width: 100%;
+        height: 10vh;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .navbar .logo a {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .navbar .links {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .navbar .toggle_btn {
+        color: azure;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .action_btn {
+    
+        background-color: #618264;
+        color: white !important;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transform: scale 0.2 ease;
+    }
+    
+    .action_logout_btn {
+        background-color: #c53730;
+    }
+    
+    .dropdown_menu {
+        position: absolute;
+        display: none;
+        right: 2rem;
+        top: 10vh;
+        height: 0vh;
+        width: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .dropdown_menu.open.login {
+        height: 35vh;
+    }
+    
+    .dropdown_menu.open.logout {
+        height: 40vh;
+        z-index: 2;
+    }
+    
+    .dropdown_menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .dropdown_menu .action_btn {
+        width: 100%;
+        padding: 1.2em;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -29,7 +29,7 @@
 .buttons label {
     width: 20px;
     height: 20px;
-    background-color: white;
+    background-color: #e5b357;
     opacity: 0.5;
     cursor: pointer;
     z-index: 1;
@@ -44,6 +44,7 @@
 .slider input:nth-child(1):checked~.buttons label:nth-child(1),
 .slider input:nth-child(2):checked~.buttons label:nth-child(2),
 .slider input:nth-child(3):checked~.buttons label:nth-child(3) {
+    background-color: #ff5b22;
     opacity: 1;
     scroll-margin: 1.2;
     width: 40px;
