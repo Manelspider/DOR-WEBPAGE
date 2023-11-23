@@ -1,7 +1,15 @@
-// Ejecutar setDarkTheme() al cargar la página por defecto
 document.addEventListener("DOMContentLoaded", function () {
     setDarkTheme();
 });
+
+function toggleTheme() {
+    var element = document.body;
+    if (element.classList.contains("dark-theme")) {
+        setLightTheme();
+    } else {
+        setDarkTheme();
+    }
+}
 
 function setLightTheme() {
     var element = document.body;
@@ -47,10 +55,13 @@ function setDarkTheme() {
     }
 }
 
-// Puedes llamar a estas funciones según tus necesidades
-// Por ejemplo, setLightTheme() para establecer el tema claro
-// y setDarkTheme() para establecer el tema oscuro.
+// Asignar la función toggleTheme() al botón de cambio de tema
+document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
 
-// Ejemplo de cómo podrías usar estas funciones con un botón:
-document.getElementById("set-light-theme-button").addEventListener("click", setLightTheme);
-document.getElementById("set-dark-theme-button").addEventListener("click", setDarkTheme);
+// Asignar la función toggleMenu() al botón de hamburguesa
+document.getElementById("toggle-menu-button").addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    var links = document.querySelector(".links");
+    links.classList.toggle("open");
+}

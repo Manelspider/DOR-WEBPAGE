@@ -1,15 +1,3 @@
-:root {
-    --color-primario: azure;
-    --color-secundario: black;
-    --color-secundario-rgba: rgba(0, 0, 0, 0.7);
-    --tamanio-texto: 1.5em;
-    --color-enlaces: #e5b357;
-
-    --color-primario-alt: black;
-    --color-secundario-alt: azure;
-    --color-segcundario-rgba-alt: rgba(255, 255, 255, 0.8); 
-  }
-
 header {
     position: relative;
     padding: 0 2rem;

@@ -25,6 +25,7 @@ body {
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -38,12 +39,17 @@ body {
     background-image: url(../../Images/background-old.jpg);
 }
 
+
 #set-light-theme-button{
     color: white !important;
 }
 
 li {
     list-style: none;
+}
+
+ul{
+    margin: 0;
 }
 
 a {
