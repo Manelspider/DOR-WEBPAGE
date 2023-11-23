@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,200&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../../Fonts/NotoSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --color-primario: azure;
@@ -16,8 +24,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -31,11 +38,13 @@ body {
 
 .white-theme{
     background-color: var(--color-primario-alt);
+    color: var(--color-primario-alt);
     background-image: url(../../Images/white-background.jpg);
 }
 
 .dark-theme{
     background-color: var(--color-primario);
+    color: var(--color-primario);
     background-image: url(../../Images/background-old.jpg);
 }
 

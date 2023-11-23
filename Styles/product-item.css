@@ -1,7 +1,8 @@
 section{
-    height: 150vh;
+    height: 220vh;
     overflow: hidden;
 }
+
 
 .product-content{
     width: 100%; 
@@ -130,7 +131,7 @@ section{
 }
 
 .p-requisites-recomended{
-    width: 50%;
+    width: 54%;
     background-color: rgba(62, 59, 59, 0.5);
 }
 
@@ -143,8 +144,12 @@ section{
     padding-left: 1.5%;
 }
 
-.comentario{
-    background-color: rgba(255, 255, 255, 0.5);
+.white-theme .comentario{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.dark-theme .comentario{
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .reviews{
@@ -155,7 +160,7 @@ section{
 
 .reviews .review-form{
     height: 50%;
-    background-color: aliceblue;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .review-form form{
@@ -175,7 +180,32 @@ section{
 
 @media screen and (max-width : 991px){
     section{
-        height: 200vh;
+        height: 270vh;
+    }
+    
+    .content-card{
+        width: 100%;
+    }
+    .elem-compra{
+        width: 92%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    
+    .card-images{
+        width: 100%;
+    }
+
+    .card-content{
+        width: 100%;
+    }
+
+    .carousel-indicators{
+        bottom: 6em;
+    }
+
+    .precio-funciones{
+        flex-direction: column;
     }
 
     .content-card{
@@ -183,11 +213,21 @@ section{
     }
 }
 
-@media screen 
-and (max-width : 1800px) {
+@media (min-width: 991px) and (max-width : 1336px) {
+    
+    .p-requisites-minimal h3{
+        padding-top: 8% !important;
+        padding-bottom: 8% !important;
+    }
+}
 
+@media (min-width: 991px) and (max-width: 1800px) {
     section{
-        height: 200vh;
+        height: 240vh;
+    }
+
+    .carousel-indicators{
+        bottom: 6em;
     }
 
     .precio-funciones{
