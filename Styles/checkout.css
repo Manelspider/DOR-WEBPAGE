@@ -3,192 +3,266 @@
     font-weight: bolder;
 }
 
-h1{
+h1 {
     font-weight: bolder;
+    padding: 2%;
+    border-bottom: 2px solid white;
+}
+
+div h4{
+    font-weight: bolder;
+    padding: 1%;
+    border-bottom: 2px solid var(--color-primario);
+}
+
+.shopping-list {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 0;
+}
+
+.container-shop{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.shopping-list .shop-items {
+    width: 100%;
+    height: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--fondos-importantes);
+    border-radius: 20px;
+}
+
+.shopping-list .recom-items{
+    width: 100%;
+    height: 25%;
+    margin-top: 2%;
+    background-color: var(--fondos-generales);
+    border-radius: 20px;
+}
+
+.shopping-list .checkout-box{
+    width: 100%;
+    height: 25%;
+    margin-top: 2%;
+    background-color: var(--fondos-importantes);
+    border-radius: 20px;
+}
+
+.product-item{
+    width: 95%;
+    margin: 2%;
+}
+
+.product-item .col .col-5{
+    align-self: center;
+}
+
+.product-item .col:last-child{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.product-item{
+    padding-bottom: 2%;
+    border-bottom: 3px solid white;
+}
+
+.product-item:last-child{
+    border-bottom: none;
+}
+
+.recom-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recom-items .card-recom{
+    width: 35%;
+    height: 100%;
+    padding-right: 2%;
+    padding-left: 2%;
+    border-right: 3px solid white;
+}
+
+.recom-items .card-recom:last-child{
+    border-right: none;
+}
+
+.card-recom{
+    height: 90%;
+}
+.card-recom img{
+    max-width: 100%;
+}
+
+.card-recom p{
+    margin: 0;
+}
+
+.card-recom p:first-child{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.card-recom button{
+    width: 100%;
+    height: 100%;
+}
+
+.card-recom img{
+    margin-bottom: 3%;
+    border-radius: 15px;
+}
+
+.input_pagos{
+    background-color: var(--fondos-generales);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tipoPago{
+    background-color: var(--fondos-generales);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.cod-promocion{
+    background-color: var(--fondos-generales);
+    height: 5%;
+    margin-top: 2%;
+    padding: 2%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.cod-promocion label{
+    margin-right: 2%;
+}
+
+.cod-promocion input{
+    width: 40%;
+    margin-right: 2%;
+}
+
+.cod-promocion button{
+    width: 20%;
+}
+
+.checkout-resume{
+    background-color: var(--fondos-generales);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.checkout-pay{
+    background: var(--fondos-importantes);
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    padding: 4%;
+    padding-left: 1%;
+    padding-right: 2%;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.checkout-pay span{
+    font-size: 1.2em;
+    color: var(--color-enlaces);
+}
+
+.checkout-pay button{
+    width: 40%;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 991px) {
     .shopping-list {
-        width: 90%;
-        height: 285vh;
-        margin: 5%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .container-shop{
         width: 100%;
-        height: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        height: 300vh;
         display: flex;
         flex-direction: column;
-    }
-
-    .shopping-list .shop-items {
-        width: 100%;
-        height: 40%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        background-color: rgba(46, 45, 45, 0.9);
-        border-radius: 20px;
-    }
-
-    .shopping-list .recom-items{
-        width: 100%;
-        height: 25%;
-        margin-top: 2%;
-        background-color: rgba(46, 45, 45, 0.5);
-        border-radius: 20px;
-    }
-
-    .shopping-list .checkout-box{
-        width: 100%;
-        height: 25%;
-        margin-top: 2%;
-        background-color: rgba(46, 45, 45, 0.9);
-        border-radius: 20px;
-    }
-
-    .product-item{
-        width: 95%;
-        margin: 2%;
-    }
-    
-    .product-item .col .col-5{
-        align-self: center;
-    }
-
-    .product-item .col:last-child{
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    .product-item{
-        padding-bottom: 2%;
-        border-bottom: 3px solid white;
-    }
-
-    .product-item:last-child{
-        border-bottom: none;
-    }
-
-    .recom-items{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .recom-items .card-recom{
-        width: 35%;
-        height: 100%;
-        padding-right: 2%;
-        padding-left: 2%;
-        border-right: 3px solid white;
-    }
-
-    .recom-items .card-recom:last-child{
-        border-right: none;
-    }
-
-    .card-recom{
-        height: 90%;
-    }
-    .card-recom img{
-        max-width: 100%;
-    }
-
-    .card-recom p{
-        margin: 0;
-    }
-    
-    .card-recom p:first-child{
-        margin-top: 2%;
-        margin-bottom: 5%;
-    }
-
-    .card-recom button{
-        width: 100%;
-        height: 100%;
-    }
-
-    .card-recom img{
-        margin-bottom: 3%;
-        border-radius: 15px;
-    }
-
-    .input_pagos{
-        background-color: rgba(46, 45, 45, 0.5);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-
-    .tipoPago{
-        background-color: rgba(46, 45, 45, 0.5);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-
-    .cod-promocion{
-        background-color: rgba(46, 45, 45, 0.5);
-        height: 5%;
-        margin-top: 2%;
-        padding: 2%;
-        border-radius: 20px;
-        align-items: center;
-    }
-
-    .cod-promocion label{
-        margin-right: 2%;
-    }
-
-    .cod-promocion input{
-        width: 40%;
-        margin-right: 2%;
-    }
-
-    .cod-promocion button{
-        width: 20%;
-    }
-
-    .checkout-resume{
-        background-color: rgba(46, 45, 45, 0.5);
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        margin-top: 2%;
-        margin-bottom: 2%;
     }
 
     .checkout-pay{
-        background: rgba(46, 45, 45, 1);
-        width: 100%;
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 992px) {
+    #tarjeta_credito{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .container-shop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .shopping-list .shop-items {
+        width: 97%;
         height: 100%;
-        justify-content: space-around;
-        padding: 4%;
-        padding-left: 0%;
-        padding-right: 0%;
-        margin: 0;
-        margin-bottom: 2%;
+        grid-column: 1 / 3;
+        grid-row: 1/4;
+    }
+    
+    .input_pagos {
+        grid-column: 3 / 5;
+        grid-row: 1/2;
+    }
+    
+    .tipoPago {
+        grid-column: 3 / 5;
+        grid-row: 2/3;
     }
 
-    .checkout-pay span{
-        font-size: 1.2em;
-        color: var(--color-enlaces);
+    .cod-promocion {
+        grid-column: 3/5;
+        grid-row: 3/3;
+        height: 100%;
+    }
+    
+    .checkout-resume {
+        grid-column: 1 / 5;
+    }
+    
+    .checkout-pay {
+        grid-column: 1 / 5;
+        align-items: center;
     }
 
-    .checkout-pay button{
-        width: 40%;
-        height: 100%;
-        font-size: 1.2em;
+    h4 {
+        margin-top: 1%;
+    }
+
+    .recom-items .card-recom {
+        padding: 2%;
     }
 }

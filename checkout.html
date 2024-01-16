@@ -61,8 +61,8 @@
 
         <section class="shopping-list">
             <div class="container-shop">
-                <h1>Cesta</h1>
                 <div class="shop-items">
+                    <h1>Cesta</h1>
                     <div class="product-item">
                         <div class="row">
                             <div class="col-4 d-flex">
@@ -76,15 +76,22 @@
                                             class="fa-solid fa-trash-can"></i></p>
                                 </div>
                             </div>
-                            <div class="col d-flex flex-column">
-                                <p>20€</p>
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                            <div class="col-3 d-flex flex-column">
+                                <p>Precio: 20€</p>
+                                <div class="select-box d-flex">
+                                    <p>Cant:</p>
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" name="seleccionar" value="selected-item" checked>
+                                <label for="seleccionar"> Seleccionar Compra</label><br>
                             </div>
                         </div>
                     </div>
@@ -102,14 +109,21 @@
                                 </div>
                             </div>
                             <div class="col d-flex flex-column">
-                                <p>40€</p>
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                                <p>Precio 40€</p>
+                                <div class="select-box d-flex">
+                                    <p>Cant:</p>
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" name="seleccionar" value="selected-item" checked>
+                                <label for="seleccionar"> Seleccionar Compra</label><br>
                             </div>
                         </div>
                     </div>
@@ -128,14 +142,21 @@
                                 </div>
                             </div>
                             <div class="col d-flex flex-column">
-                                <p>10€</p>
-                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                                <p>Precio: 10€</p>
+                                <div class="select-box d-flex">
+                                    <p>Cant:</p>
+                                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" name="seleccionar" value="selected-item">
+                                <label for="seleccionar"> Seleccionar Compra</label><br>
                             </div>
                         </div>
                     </div>
@@ -256,15 +277,16 @@
                             <p>Paypal</p>
                             <p>36820</p>
                             <p>T0D0B4R4T0-2024 (10%)</p>
-                            <p>70€</p>
-                            <p>63€</p>
+                            <p>60€</p>
+                            <p>54€</p>
                         </div>
                     </div>           
                 </div>
 
                 <div class="checkout-pay d-flex">
-                    <h2>Total a Pagar: <span>63€</span></h2>
-                    <button type="button" class="btn btn-success ">Pagar</button>
+                    <h2>Total a Pagar: <span>54€</span></h2>
+                    <button type="button" class="btn btn-success ">Realizar Pago</button>
+                    <button type="button" class="btn btn-primary ">Comprar Como Regalo</button>
                 </div>
                 
             </div>

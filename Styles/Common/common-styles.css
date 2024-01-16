@@ -17,7 +17,10 @@
 
     --color-primario-alt: black;
     --color-secundario-alt: azure;
-    --color-segcundario-rgba-alt: rgba(0,0,0,0.7); 
+    --color-segcundario-rgba-alt: rgba(0,0,0,0.7);
+    
+    --fondos-generales: rgba(46, 45, 45, 0.5);
+    --fondos-importantes: rgba(46, 45, 45, 0.9);
   }
 
 * {

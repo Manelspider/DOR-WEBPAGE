@@ -18,7 +18,8 @@
     width: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
     border-radius: 1.2em;
-    background: white;
+    background: white
+    
 }
 
 .price-tag {
