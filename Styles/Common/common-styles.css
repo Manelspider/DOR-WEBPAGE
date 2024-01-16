@@ -36,6 +36,10 @@ body {
     background-position: center;
 }
 
+.theme-toggle{
+    margin-top: 0.3em;
+}
+
 .white-theme{
     background-color: var(--color-primario-alt);
     color: var(--color-primario-alt);

@@ -1,5 +1,5 @@
 section{
-    height: 220vh;
+    height: 150vh;
     overflow: hidden;
 }
 
@@ -180,7 +180,7 @@ section{
 
 @media screen and (max-width : 991px){
     section{
-        height: 270vh;
+        height: 200vh;
     }
     
     .content-card{
@@ -223,7 +223,7 @@ section{
 
 @media (min-width: 991px) and (max-width: 1800px) {
     section{
-        height: 240vh;
+        height: 180vh;
     }
 
     .carousel-indicators{

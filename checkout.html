@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles/Common/common-styles.css">
+    <link rel="stylesheet" href="./Styles/Common/header-styles.css">
+    <link rel="stylesheet" href="./Styles/Common/footer-styles.css">
+    <link rel="stylesheet" href="./Styles/checkout.css">
+    <title>Tiendita Juegos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="./index.html">Logo</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Tienda</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="links">
+                <li><a href="./profile.html">Mi Perfil</a></li>
+                <li> <a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+                <li> <a href="checkout.html" class="action_btn action_shopping_cart_btn">Carrito <i
+                            class="fas fa-shopping-cart"></i></a></li>
+                <div class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="set-dark-theme-button"></i>
+                    <i class="fas fa-sun" id="set-light-theme-button"></i>
+                </div>
+            </ul>
+
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown_menu open logout">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./catalogo.html">Tienda</a></li>
+            <li><a href="">Noticias</a></li>
+            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="./profile.html">Mi Perfil</a></li>
+            <li><a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+            <li> <a href="checkout.html" class="action_btn action_shopping_cart_btn">Carrito <i
+                        class="fas fa-shopping-cart"></i></a></li>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="shopping-list">
+            <div class="container-shop">
+                <h1>Cesta</h1>
+                <div class="shop-items">
+                    <div class="product-item">
+                        <div class="row">
+                            <div class="col-4 d-flex">
+                                <img src="Images/gta-v-cover.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-5 d-flex">
+                                <div class="d-flex flex-column mb-3">
+                                    <p>Grand Theft Auto V</p>
+                                    <p><i class="fa-brands fa-playstation"></i> PS5</p>
+                                    <p class="btn btn-danger">Eliminar del carrito: <i
+                                            class="fa-solid fa-trash-can"></i></p>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <p>20€</p>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="row">
+                            <div class="col-4 d-flex">
+                                <img src="Images/Alyx.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-5 d-flex">
+                                <div class="d-flex flex-column mb-3">
+                                    <p>Half-Life Alyx</p>
+                                    <p><i class="fa-brands fa-steam"></i> Steam</p>
+                                    <p class="btn btn-danger">Eliminar del carrito: <i
+                                            class="fa-solid fa-trash-can"></i></p>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <p>40€</p>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="row">
+                            <div class="col-4 d-flex">
+                                <img src="Images/gmod-cover.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-5 d-flex">
+                                <div class="d-flex flex-column mb-3">
+                                    <p>Garry´s Mod</p>
+                                    <p><i class="fa-brands fa-steam"></i> Steam</p>
+                                    <p class="btn btn-danger">Eliminar del carrito: <i
+                                            class="fa-solid fa-trash-can"></i></p>
+                                </div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <p>10€</p>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input_pagos">
+
+                    <h4 class="mb-3">Dirección de Envío</h4>
+
+                    <div class="my-3">
+                        <label for="nombre-completo" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre-completo" placeholder="">
+                        <small>Ingrese el nombre completo del destinatario</small>
+                        <div class="invalid-feedback">
+                            Nombre es requerido
+                        </div>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="">
+                        <div class="invalid-feedback">
+                            Dirección es requerida
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad" placeholder="">
+                            <div class="invalid-feedback">
+                                Ciudad es requerida
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="codigo-postal" class="form-label">Código Postal</label>
+                            <input type="text" class="form-control" id="codigo-postal" placeholder="">
+                            <div class="invalid-feedback">
+                                Código Postal es requerido
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tipoPago">
+                    <h4 class="mb-3">Pago</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input">
+                            <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input">
+                            <label class="form-check-label" for="debit">Tarjera de Débito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input">
+                            <label class="form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="row gy-3" id="tarjeta_credito">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="">
+                            <small>Debe indicar el nombre completo que aparece en la tarjeta</small>
+                            <div class="invalid-feedback">
+                                Name on bank is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Número de la tarjeta</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Fecha Caducidad</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="">
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="">
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cod-promocion d-flex justify-content-center">
+                    <label for="Promocion" class="align-self-center">Codigo de Promocion: </label>
+                    <input type="text">
+                    <button type="button" class="btn btn-success ">Aplicar</button>
+                </div>
+
+                <div class="checkout-resume">
+                    <h4>Resumen de la Compra</h4>
+                    <div class="row">
+                        <div class="col">
+                            <p>Direccion</p>
+                            <p>Tipo de pago</p>
+                            <p>Codigo Postal</p>
+                            <p>Codigo de descuento</p>
+                            <p>Precio Original</p>
+                            <p>Precio Descontado</p>
+                        </div>
+                        <div class="col-7">
+                            <p>Calle Pruebas la zona</p>
+                            <p>Paypal</p>
+                            <p>36820</p>
+                            <p>T0D0B4R4T0-2024 (10%)</p>
+                            <p>70€</p>
+                            <p>63€</p>
+                        </div>
+                    </div>           
+                </div>
+
+                <div class="checkout-pay d-flex">
+                    <h2>Total a Pagar: <span>63€</span></h2>
+                    <button type="button" class="btn btn-success ">Pagar</button>
+                </div>
+                
+            </div>
+
+            <h4>Productos Relacionados!!</h4>
+            <div class="recom-items">
+                <div class="d-flex justify-content-center">
+                    <div class="card-recom">
+                        <img src="Images/Alyx.jpg" alt="Card image cap">
+                        <div class="row">
+                            <div class="col info-price">
+                                <p>Half-Life Alyx <i class="fa-brands fa-steam"></i></p>
+                                <p>40€</p>
+                            </div>
+                            <div class="col d-flex">
+                                <button type="button" class="btn btn-secondary">Añadir <i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-recom">
+                        <img src="Images/Alyx.jpg" alt="Card image cap">
+                        <div class="row">
+                            <div class="col info-price">
+                                <p>Half-Life Alyx <i class="fa-brands fa-steam"></i></p>
+                                <p>40€</p>
+                            </div>
+                            <div class="col d-flex">
+                                <button type="button" class="btn btn-secondary">Añadir <i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-recom">
+                        <img src="Images/Alyx.jpg" alt="Card image cap">
+                        <div class="row">
+                            <div class="col info-price">
+                                <p>Half-Life Alyx <i class="fa-brands fa-steam"></i></p>
+                                <p>40€</p>
+                            </div>
+                            <div class="col d-flex">
+                                <button type="button" class="btn btn-secondary">Añadir <i
+                                        class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <div class="container">
+                <div class="col contanct">
+                    <p>
+                        <a href="" class="logo">Logo</a>
+                    </p>
+                    <p>
+                        <a href="mailto:prueba@gmail.com" class="icon"><i
+                                class="fa-regular fa-envelope"></i>prueba@gmail.com</a>
+                    </p>
+                    <div class="social_media_links">
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col info">
+                    <h2>Info</h2>
+                    <p>
+                        <a href="./index.html">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="./catalogo.html">Tienda</a>
+                    </p>
+                    <p>
+                        <a href="">Noticias</a>
+                    </p>
+                    <p>
+                        <a href="">Acerca de Nosotros</a>
+                    </p>
+                    <p>
+                        <a href="">Contacto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">Copyright&copy;2023 Logo</div>
+    </footer>
+    <script src="./Scripts/common-content.js"></script>
+    <script src="./Scripts/dark_and_white_Theme.js"></script>
+    <script src="./Scripts/select_payment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
