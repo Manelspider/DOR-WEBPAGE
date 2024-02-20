@@ -54,13 +54,6 @@ function setDarkTheme() {
         element.classList.remove("white-theme");
     }
 }
-
-// Asignar la función toggleTheme() al botón de cambio de tema
-document.getElementById("theme-toggle").addEventListener("click", toggleTheme);
-
-// Asignar la función toggleMenu() al botón de hamburguesa
-document.getElementById("toggle-menu-button").addEventListener("click", toggleMenu);
-
 function toggleMenu() {
     var links = document.querySelector(".links");
     links.classList.toggle("open");

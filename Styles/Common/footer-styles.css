@@ -12,12 +12,12 @@
   
 @media (max-width: 991px){
     .dark-theme footer {
-        background-color: var(--color-secundario);
+        background-color: var(--color-secundario-alt);
         color: var(--color-primario);
     }
 
     .white-theme footer{
-        background-color: var(--color-secundario-alt);
+        background-color: var(--color-segcundario-rgba);
         color: var(--color-secundario);
     }
     
@@ -117,13 +117,13 @@
 
 @media (min-width: 992px){
     .dark-theme footer {
-        background-color: var(--color-secundario);
-        color: var(--color-primario);
+        background-color: var(--color-secundario-alt);
+        color: var(--color-secundario);
     }
 
     .white-theme footer{
-        background-color: var(--color-secundario-alt);
-        color: var(--color-secundario);
+        background-color: var(--color-secundario);
+        color: var(--color-primario);
     }
     
     footer a {
@@ -157,11 +157,11 @@
     }
     
     .dark-theme .footer_copyright{
-        background-color: var(--color-secundario);
+        background-color: var(--color-primario);
     }
 
     .white-theme .footer_copyright{
-        background-color: var(--color-primario);
+        background-color: var(--color-secundario);
     }
 
     .footer_content {

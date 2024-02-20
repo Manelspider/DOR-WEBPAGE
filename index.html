@@ -14,6 +14,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tiendita Juegos</title>
+    <meta name="description" content="¿Buscas Juegos a un precio que te permita comprarte una monster y viciar? Aqui existe esta posibilidad!"/> 
 </head>
 
 <body>
@@ -24,15 +25,19 @@
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./catalogo.html">Tienda</a></li>
                 <li><a href="">Noticias</a></li>
-                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
             <ul class="links">
-                <a href="" class="action_btn">Iniciar Sesion</a>
-                <div class="theme-toggle" onclick="toggleTheme()">
-                    <i class="fas fa-moon" id="set-dark-theme-button"></i>
-                    <i class="fas fa-sun" id="set-light-theme-button"></i>
-                </div>
+                <li>
+                    <a href="" class="action_btn">Iniciar Sesion</a>
+                </li>
+                <li>
+                    <div class="theme-toggle" onclick="toggleTheme()">
+                        <i class="fas fa-moon" id="set-dark-theme-button"></i>
+                        <i class="fas fa-sun" id="set-light-theme-button"></i>
+                    </div>
+                </li>
             </ul>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -100,7 +105,7 @@
                     <div class="price-tag">
                         <p>50%</p>
                     </div>
-                    <div class="img"><img src="./Images/Alyx.jpg" alt=""></div>
+                    <div class="img"><img src="./Images/Alyx.webp" alt=""></div>
                     <div class="p-content">
                         <div class="review-container">
                             <div class="stars">
@@ -204,7 +209,7 @@
             <section class="news-forum">
                 <div class="news">
                     <section>
-                        <img src="./Images/Alyx.jpg" alt="">
+                        <img src="./Images/Alyx.webp" alt="">
                         <div class="content">
                             <p class="principal">Lorem, ipsum!</p>
                             <p class="cuerpo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
@@ -261,13 +266,13 @@
                                 class="fa-regular fa-envelope"></i>prueba@gmail.com</a>
                     </p>
                     <div class="social_media_links">
-                        <a href="" target="_blank" class="icon">
+                        <a href="" target="_blank" class="icon" aria-label="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="" target="_blank" class="icon">
+                        <a href="" target="_blank" class="icon" aria-label="LinkedIn">
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="" target="_blank" class="icon">
+                        <a href="" target="_blank" class="icon" aria-label="Twitter">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
                     </div>
@@ -295,8 +300,8 @@
         <div class="footer_copyright">Copyright&copy;2023 Logo</div>
     </footer>
 
-    <script src="./Scripts/dark_and_white_Theme.js"></script>
-    <script src="./Scripts/common-content.js"></script>
+    <script src="./Scripts/dark_and_white_Theme.js" defer></script>
+    <script src="./Scripts/common-content.js" defer></script>
 </body>
 
 </html>

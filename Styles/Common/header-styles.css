@@ -5,11 +5,15 @@ header {
 }
 
 .white-theme header{
-    background: var(--color-segcundario-rgba-alt);
+    background: var(--color-primario-alt);
 }
 
 .dark-theme header{
-    background: var(--color-secundario-rgba);
+    background: var(--color-secundario-alt);
+}
+
+.fa-sun{
+    color: black;
 }
 
 @media (max-width: 1400px) {
@@ -160,7 +164,7 @@ header {
     .action_btn {
     
         background-color: #618264;
-        color: white !important;
+        color: black !important;
         padding: 0.5rem 1rem;
         border: none;
         outline: none;
@@ -172,7 +176,7 @@ header {
     }
     
     .action_logout_btn {
-        background-color: red;
+        background-color: #ff6868;
     }
 
     .action_shopping_cart_btn {

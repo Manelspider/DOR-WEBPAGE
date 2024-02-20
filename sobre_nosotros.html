@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Pagina sobre la description de nuestra empresa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/Common/common-styles.css">
+    <link rel="stylesheet" href="./Styles/Common/header-styles.css">
+    <link rel="stylesheet" href="./Styles/Common/footer-styles.css">
+    <link rel="stylesheet" href="./Styles/sobre_nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tiendita Juegos</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="./index.html">Logo</a></div>
+            <ul class="links">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Tienda</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="links">
+                <li><a href="./profile.html">Mi Perfil</a></li>
+                <li> <a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+                <li> <a href="checkout.html" class="action_btn action_shopping_cart_btn">Carrito <i
+                            class="fas fa-shopping-cart"></i></a></li>
+                <li class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fas fa-moon" id="set-light-theme-button"></i>
+                    <i class="fas fa-sun" id="set-dark-theme-button"></i>
+                </li>
+            </ul>
+
+
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <nav class="dropdown_menu open logout">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./catalogo.html">Tienda</a></li>
+                <li><a href="">Noticias</a></li>
+                <li><a href="./sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="./profile.html">Mi Perfil</a></li>
+                <li><a href="" class="action_btn action_logout_btn">Cerrar Sesion</a></li>
+                <li> <a href="checkout.html" class="action_btn action_shopping_cart_btn">Carrito <i
+                            class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-us-content">
+
+            <h1>Nuestra tienda</h1>
+
+            <section class="about">
+                <div class="content">
+                    <img src="Images/fondo-controlador-juego.webp" alt="Mando de PS5">
+                    <div class="text">
+                        <h2>¿Quiénes somos?</h2>
+                        <p>
+                            Tiendita Juegos es tu destino para encontrar los mejores juegos, desde clásicos hasta las
+                            últimas
+                            novedades. Nos apasiona ofrecer experiencias de juego únicas y emocionantes para todos los
+                            jugadores.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <h2>¿Que nos diferencia de la competencia?</h2>
+
+            <section class="section-cards">
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded-start" src="./Images/Alyx.jpg" alt="Personal">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Alyx</h2>
+                                <p class="card-text">Alyx es una de las fundadoras de Tiendita Juegos. Ella es una
+                                    apasionada de los
+                                    videojuegos y siempre está buscando nuevas formas de mejorar la experiencia de juego
+                                    para
+                                    todos los jugadores. Alyx es una experta en juegos de rol y siempre está dispuesta a
+                                    compartir sus conocimientos con los demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded-start" src="./Images/Alyx.jpg" alt="Personal">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Alyx</h2>
+                                <p class="card-text">Alyx es una de las fundadoras de Tiendita Juegos. Ella es una
+                                    apasionada de los
+                                    videojuegos y siempre está buscando nuevas formas de mejorar la experiencia de juego
+                                    para
+                                    todos los jugadores. Alyx es una experta en juegos de rol y siempre está dispuesta a
+                                    compartir sus conocimientos con los demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded-start" src="./Images/Alyx.jpg" alt="Personal">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Alyx</h2>
+                                <p class="card-text">Alyx es una de las fundadoras de Tiendita Juegos. Ella es una
+                                    apasionada de los
+                                    videojuegos y siempre está buscando nuevas formas de mejorar la experiencia de juego
+                                    para
+                                    todos los jugadores. Alyx es una experta en juegos de rol y siempre está dispuesta a
+                                    compartir sus conocimientos con los demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid rounded-start" src="./Images/Alyx.jpg" alt="Personal">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Alyx</h2>
+                                <p class="card-text">Alyx es una de las fundadoras de Tiendita Juegos. Ella es una
+                                    apasionada de los
+                                    videojuegos y siempre está buscando nuevas formas de mejorar la experiencia de juego
+                                    para
+                                    todos los jugadores. Alyx es una experta en juegos de rol y siempre está dispuesta a
+                                    compartir sus conocimientos con los demás.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <h2>Pequeño video mostrando lo que hacemos</h2>
+
+            <section class="content-video">
+                <iframe src="https://www.youtube.com/embed/GnLdskq6zq4"
+                    title="Como instalar un juego en Steam, steam como funciona!"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </section>
+
+            <h2>Graficas relevantes</h2>
+
+            <section class="graficos">
+                <div class="graficos-plataformas">
+                    <img src="./Images/Grafica_Plataformas.JPG" alt="Plataformas">
+                    <div class="grafico-content-text">
+                        <h2>Grafica de plataformas</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ullam odit dolorem alias
+                            sit aut doloremque, quia adipisci, iste vel modi! Inventore nulla libero sunt quo earum
+                            officiis doloremque blanditiis.
+                        </p>
+                    </div>
+                </div>
+                <div class="grafico-jugadores">
+                    <img src="./Images/Grafica-Jugadores-por-edades.png" alt="">
+                    <div class="grafico-content-text">
+                        <h2>Edad de Jugadores</h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit blanditiis unde
+                            itaque nemo numquam consectetur ducimus quos ab esse. Illo suscipit qui aut consequatur ad?
+                            Fuga exercitationem similique nemo aliquid.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <h2>Comparativa sobre la cantidad de tipos de juegos que tenemos</h2>
+
+            <section class="categories-table mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2>Categorías de Juegos</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Categoría</th>
+                                        <th>Porcentaje</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Aventura</td>
+                                        <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Estrategia</td>
+                                        <td>15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Acción</td>
+                                        <td>25%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RPG</td>
+                                        <td>15%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Deportes</td>
+                                        <td>10%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sandbox</td>
+                                        <td>5%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Simulación</td>
+                                        <td>10%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-5 my-2">
+                            <h2>Explora Nuestras Categorías</h2>
+                            <p class="my-5">
+                                Descubre una amplia variedad de juegos emocionantes en nuestras diversas categorías.
+                                Desde
+                                aventuras épicas hasta estrategias ingeniosas, tenemos algo para cada tipo de jugador.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer_content">
+            <div class="container">
+                <div class="col contanct">
+                    <p>
+                        <a href="" class="logo">Logo</a>
+                    </p>
+                    <p>
+                        <a href="mailto:prueba@gmail.com" class="icon"><i
+                                class="fa-regular fa-envelope"></i>prueba@gmail.com</a>
+                    </p>
+                    <div class="social_media_links">
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-facebook-f" title="Facebook icon"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-linkedin-in" title="Linkedin icon"></i>
+                        </a>
+                        <a href="" target="_blank" class="icon">
+                            <i class="fa-brands fa-twitter" title="Twitter icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col info">
+                    <h2>Info</h2>
+                    <p>
+                        <a href="./index.html">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="./catalogo.html">Tienda</a>
+                    </p>
+                    <p>
+                        <a href="">Noticias</a>
+                    </p>
+                    <p>
+                        <a href="">Acerca de Nosotros</a>
+                    </p>
+                    <p>
+                        <a href="">Contacto</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">Copyright&copy;2023 Logo</div>
+        <script src="./Scripts/common-content.js" defer></script>
+        <script src="./Scripts/dark_and_white_Theme.js" defer></script>
+    </footer>
+
+</body>
